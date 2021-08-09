@@ -3,7 +3,7 @@ using namespace std;
 
 int getRandom()
 {
-    int lower = 0, upper = 5;
+    int lower = 0, upper = 10;
     int num = (rand() %
                (upper - lower + 1)) +
               lower;

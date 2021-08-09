@@ -25,4 +25,5 @@ int main()
     cin >> n;
     ans = isqrt(n);
     cout << "\nSquare root of " << n << " is = " << int (ans) << endl;
+    return 0;
 }

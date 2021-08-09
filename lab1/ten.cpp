@@ -8,7 +8,6 @@ int div(int &x)
 
 void max(int &a, int &b)
 {
-
     int calc = (a + b + abs(a - b));
     int result = div(calc);
     cout << "Maximum : " << result << endl;
@@ -18,6 +17,9 @@ int main()
 {
 
     int n1, n2;
+
+    int n = 10;
+    cout<< n + - n ;
 
     cout << "Enter the first number : ";
     cin >> n1;

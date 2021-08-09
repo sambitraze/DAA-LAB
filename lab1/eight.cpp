@@ -3,7 +3,7 @@ using namespace std;
 
 int getRandom()
 {
-    int lower = 0, upper = 5;
+    int lower = 1, upper = 5;
     int num = (rand() %
                (upper - lower + 1)) +
               lower;
@@ -12,10 +12,15 @@ int getRandom()
 
 int getProductArray(int *a, int n, int index)
 {
-    int prod=1;
-    for(int i=0;i<n;i++){
-        if(i==index) continue;
-        else prod*=(*(a + i));
+    int prod = 1;
+    for (int i = 0; i < n; i++)
+    {
+        if (i == index)
+            continue;
+        else
+        {
+            prod = prod * (*(a + i));
+        }
     }
     return prod;
 }
@@ -38,6 +43,5 @@ int main()
         b[i] = getProductArray(a, n, i);
         cout << b[i] << " ";
     }
-    cout<<endl;
+    cout << endl;
 }
-
